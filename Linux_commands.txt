@@ -1,0 +1,31 @@
+#SSH into the EC2 instance
+ssh -i <key-pair_file-path>/<pem-key.pem> ubuntu@EC2_public_IP
+
+#Rename the server
+sudo hostnamectl hostname <server-name>
+/bin/bash
+
+#Server binaries and file update and upgrade
+sudo apt update -y
+sudo apt upgrade -y 
+
+#Install Apache2 webserver
+sudo apt install Apache2
+
+#Start Apache2 service
+sudo systemctl start Apache2
+
+#Confirm service -Apache2
+sudo systemctl status Apache2
+
+#Download the html project[.zip]
+wget --content-disposition <.zip url>
+
+#install unzip
+sudp apt install unzip
+
+#unzip the html project folder.zip
+unzip <html project folder>
+
+#copy the html files to apache2 folder
+cp -r [folder-name]/* /var/www/html/
