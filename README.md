@@ -1,1 +1,1 @@
-[PROJECT TITLE]: Using Terraform Module to Build a 3 Tier AWS Network VPC [AWS]
+[PROJECT TITLE]: Using Terraform Module to Build a Simple infrastructre on  [AWS]
